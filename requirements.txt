@@ -1,0 +1,6 @@
+pandas
+seaborn
+kneed
+streamlit
+openpyxl
+scikit-learn
