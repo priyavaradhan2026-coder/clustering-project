@@ -6,7 +6,7 @@ def get_optimum_k(data):
     wcss = []
     k_values=range(1,11)
     for  i in k_values:
-        model = KMeans(n_clusters=i)
+        model = KMeans(n_clusters=i, init="k-means++", n_init=10, random_state=42)
         model.fit(data)
         wcss.append(model.inertia_)
     #ii)optimum K
