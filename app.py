@@ -31,7 +31,7 @@ if file:
 
     #model training
     K = get_optimum_k(df)
-    KMeans(n_clusters=K, init="k-means++", n_init=10, random_state=42))
+    KMeans(n_clusters=K, init="k-means++", n_init=10, random_state=42)
     model.fit(df)
     df["labels"] = model.labels_
     df
